@@ -34,7 +34,7 @@ def reg_name(message):
     bot.register_next_step_handler(message, reg_surname)
 
 def reg_surname(message):
-    global surname
+    global surnam
     surname = message.text
     bot.send_message(message.from_user.id, "Сколько вам лет?")
     bot.register_next_step_handler(message, reg_age)
